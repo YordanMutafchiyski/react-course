@@ -5,6 +5,8 @@ import {
   Title,
   Preview,
 } from './category-preview.styles';
+import Spinner from '../spinner/spinner.component';
+
 
 const CategoryPreview = ({ title, products }) => {
   return (

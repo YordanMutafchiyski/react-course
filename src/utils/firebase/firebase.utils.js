@@ -60,10 +60,10 @@ export const addCollectionAndDocuments = async (
   })
 
   await batch.commit();
-  console.log("done");
 };
 
 export const getCategoriesAndDocuments = async () =>{
+  console.log("dadadad")
   const collectionRef = collection(db, 'categories');
   const q = query(collectionRef);
   const querySnapshot = await getDocs(q);
