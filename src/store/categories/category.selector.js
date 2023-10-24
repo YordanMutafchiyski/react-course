@@ -12,7 +12,9 @@ export const selectCategoriesMap = createSelector(
   (categories) => {
     return categories.reduce((acc, category) => {
       const { title, items } = category;
+      
       acc[title.toLowerCase()] = items;
+      console.log(JSON.stringify(acc) + " ddddd")
       return acc;
     }, {})}
 );
